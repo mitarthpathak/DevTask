@@ -1,4 +1,4 @@
-# DevTask (DevStack)
+# DevTask
 
 A Spring Boot REST API for managing personal tasks, secured with JWT-based authentication. Each user registers/logs in and manages their own set of tasks, used many to one relation and postgreSQL for database
 
@@ -23,7 +23,7 @@ A Spring Boot REST API for managing personal tasks, secured with JWT-based authe
 ## Project Structure
 
 ```
-src/main/java/com/mitarth/devstack
+src/main/java/com/mitarth/devtask
 ├── controller/     # REST controllers (Task, User)
 ├── dto/            # Request/response DTOs
 ├── model/          # JPA entities (Task, Users)

@@ -1,3 +1,4 @@
+//the logic for registering a user and verifying it
 package com.mitarth.devtask.service;
 
 import com.mitarth.devtask.dto.LoginRequest;

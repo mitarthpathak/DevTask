@@ -1,3 +1,4 @@
+//the controller for home,register,login all of em
 package com.mitarth.devtask.controller;
 
 import com.mitarth.devtask.dto.LoginRequest;

@@ -1,4 +1,4 @@
-name: Daily Empty Commit
+name: Daily Checkout
 
 on:
   schedule:

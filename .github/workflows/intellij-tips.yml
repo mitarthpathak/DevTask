@@ -1,0 +1,43 @@
+name: IntelliJ Tip of the Day
+
+on:
+  schedule:
+    - cron: "30 16 * * *"   # 10:00 PM IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-tip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Add IntelliJ tip
+        run: |
+          TIPS=(
+            "Ctrl+Shift+A - Find Action: kisi bhi IDE command ko naam se search karo"
+            "Double Shift - Search Everywhere: files, classes, settings sab ek jagah"
+            "Alt+Enter - context actions aur quick fixes"
+            "Ctrl+Alt+L - reformat code"
+            "Shift+F6 - safe rename refactor, saare usages update hote hain"
+            "Ctrl+Alt+O - unused imports hata ke optimize karo"
+            "Ctrl+B - declaration pe jump"
+            "Ctrl+Shift+F10 - current file ya test run karo"
+            "Alt+J - next occurrence select karke multi-cursor edit"
+            "Ctrl+E - recently opened files"
+          )
+          IDX=$(( 10#$(date +%j) % ${#TIPS[@]} ))
+          mkdir -p docs
+          echo "- $(date -u +%F): ${TIPS[$IDX]}" >> docs/intellij-tips.md
+
+      - name: Commit tip
+        run: |
+          git config user.name "mitarthpathak"
+          git config user.email "97668137+mitarthpathak@users.noreply.github.com"
+          git add docs/intellij-tips.md
+          git commit -m "docs: add IntelliJ IDEA tip for $(date -u +%F)"
+          git push

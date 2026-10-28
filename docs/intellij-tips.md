@@ -1,0 +1,1 @@
+- 2026-10-28: Double Shift - Search Everywhere: files, classes, settings sab ek jagah

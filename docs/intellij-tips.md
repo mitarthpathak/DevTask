@@ -1,2 +1,3 @@
 - 2026-10-28: Double Shift - Search Everywhere: files, classes, settings sab ek jagah
 - 2026-10-29: Alt+Enter - context actions aur quick fixes
+- 2026-10-30: Ctrl+Alt+L - reformat code

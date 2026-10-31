@@ -1,3 +1,4 @@
 - 2026-10-28: Double Shift - Search Everywhere: files, classes, settings sab ek jagah
 - 2026-10-29: Alt+Enter - context actions aur quick fixes
 - 2026-10-30: Ctrl+Alt+L - reformat code
+- 2026-10-31: Shift+F6 - safe rename refactor, saare usages update hote hain

@@ -5,3 +5,4 @@
 - 2026-11-01: Ctrl+Alt+O - unused imports hata ke optimize karo
 - 2026-11-02: Ctrl+B - declaration pe jump
 - 2026-11-03: Ctrl+Shift+F10 - current file ya test run karo
+- 2026-11-04: Alt+J - next occurrence select karke multi-cursor edit
